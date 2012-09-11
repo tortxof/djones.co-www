@@ -1,0 +1,23 @@
+body {
+font-family:sans-serif;
+background-color:#aaa;
+}
+
+#main {
+box-shadow:0 0 10px #555;
+-webkit-box-shadow:0 0 10px #555;
+width:50em;
+margin-top:2em;
+margin-left:auto;
+margin-right:auto;
+background-color:#fff;
+border:1px solid #000;
+padding:2em;
+}
+
+#footer {
+font-size:.8em;
+background-color:#eee;
+margin:0;
+padding:0 1em;
+}
