@@ -15,16 +15,22 @@
 <link rel="icon" type="image/png" href="images/icon.png" />
 </head>
 <body>
+
 <div id="main">
 
-<p><img src="images/avatar-128.jpg" width="152" height="152" alt="portrait" style="float: left; " /></p>
+<div id="header">
+<p><img src="images/avatar-128.jpg" width="152" height="152" alt="portrait" style="float:left;" /></p>
 <h1>Daniel Jones</h1>
-<br style="clear: both; " />
+</div>
 
+<div id="content">
+<h2>[% title %]</h2>
 [% content %]
-<div id="footer">
-[% INCLUDE pgp %]
 </div>
+
+<div id="footer">[% INCLUDE pgp %]</div>
+
 </div>
+
 </body>
 </html>
