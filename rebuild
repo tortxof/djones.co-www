@@ -1,1 +1,1 @@
-ttree -s src -d out -l lib -a
+ttree -a -f ttree.cfg
