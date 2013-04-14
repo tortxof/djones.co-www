@@ -1,0 +1,44 @@
+body {
+font-family:sans-serif;
+background-color:#aaa;
+margin:0;
+padding:16px;
+}
+
+h1 {
+font-weight:normal;
+font-size:1.5em;
+}
+
+h2 {
+font-weight:normal;
+font-size:1.2em;
+}
+
+#main {
+box-shadow:0 0 10px #555;
+width:750px;
+margin:0 auto 0 auto;
+background-color:#fff;
+border:1px solid #333;
+padding:2em;
+}
+
+#header {
+width:750px;
+border:0;
+padding:0;
+margin:16px 0 16px 0;
+}
+
+#content {
+clear:both;
+}
+
+#footer {
+clear:both;
+font-size:.8em;
+background-color:#eee;
+margin:0;
+padding:4px;
+}
