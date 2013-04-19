@@ -22,7 +22,7 @@ text-align:center;
 font-size:.8em;
 padding:0;
 border:0;
-margin:0 auto 0 auto;
+margin:0 0 0 2em;
 }
 
 #nav ul
@@ -72,7 +72,7 @@ padding:1em;
 width:750px;
 border:0;
 padding:0;
-margin:0;
+margin:0 0 0 2em;
 font-size:1.5em;
 }
 
