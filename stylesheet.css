@@ -9,11 +9,13 @@ padding:16px;
 h1 {
 font-weight:normal;
 font-size:1.5em;
+text-align:center;
 }
 
 h2 {
 font-weight:normal;
 font-size:1.2em;
+text-align:center;
 }
 
 #nav {
