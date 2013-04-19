@@ -21,14 +21,15 @@ width:750px;
 margin:0 auto 0 auto;
 background-color:#fff;
 border:1px solid #333;
-padding:2em;
+padding:1em;
 }
 
 #header {
 width:750px;
 border:0;
 padding:0;
-margin:16px 0 16px 0;
+margin:0;
+font-size:1.5em;
 }
 
 #content {
