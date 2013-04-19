@@ -82,8 +82,19 @@ clear:both;
 #footer {
 clear:both;
 font-size:.8em;
-color:#333;
+color:#555;
 background-color:#eee;
 margin:0;
 padding:4px;
+}
+
+.post_date
+{
+color:#555;
+}
+
+.post_preview
+{
+color:#555;
+font-size:.8em;
 }
