@@ -1,20 +1,19 @@
 body {
 font-family:sans-serif;
-color:#000;
-background-color:#aaa;
+background-color:#666;
 margin:0;
 padding:16px;
 }
 
 h1 {
 font-weight:normal;
-font-size:1.5em;
+font-size:1.6em;
 text-align:center;
 }
 
 h2 {
 font-weight:normal;
-font-size:1.2em;
+font-size:1.3em;
 text-align:center;
 }
 
@@ -44,23 +43,23 @@ float:left;
 display:block;
 width:auto;
 color:#fff;
-background-color:#777;
+background-color:#666;
 text-align:center;
 padding:.2em 1em .2em 1em;
 margin:0 1px 0 1px;
-border:1px solid #000;
+border:1px solid #333;
 text-decoration:none;
 }
 
 #nav a:hover, #nav a:active
 {
 color:#000;
-background-color:#eee;
+background-color:#ccc;
 }
 
 #main {
 color:#000;
-box-shadow:0 0 10px #555;
+box-shadow:0 0 10px #666;
 width:750px;
 margin:0 auto 0 auto;
 background-color:#fff;
@@ -73,7 +72,7 @@ width:750px;
 border:0;
 padding:0;
 margin:0 0 0 2em;
-font-size:1.5em;
+font-size:1.6em;
 }
 
 #content {
@@ -83,19 +82,19 @@ clear:both;
 #footer {
 clear:both;
 font-size:.8em;
-color:#555;
-background-color:#eee;
+color:#666;
+background-color:#ccc;
 margin:0;
 padding:4px;
 }
 
 .post_date
 {
-color:#555;
+color:#666;
 }
 
 .post_preview
 {
-color:#555;
+color:#666;
 font-size:.8em;
 }
