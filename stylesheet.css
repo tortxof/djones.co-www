@@ -84,8 +84,9 @@ clear:both;
 font-size:.8em;
 color:#666;
 background-color:#ccc;
+border:1px solid #999;
 margin:0;
-padding:4px;
+padding:.2em 2em .2em 2em;
 }
 
 .post_date
