@@ -22,7 +22,7 @@ width:416px;
 height:153px;
 padding:0;
 border:0;
-margin:0 0 0 2em;
+margin:0 0 0 1em;
 background-image:url("/images/header.png");
 background-repeat:no-repeat;
 }
@@ -103,7 +103,7 @@ color:#666;
 font-size:.8em;
 }
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 512px), only screen and (max-device-width: 512px) {
 
 body {
 padding:0;
@@ -130,6 +130,6 @@ border:0;
 background-image:url("/images/header-mobile.png");
 width:274px;
 height:76px;
-margin:0 0 0 1em;
+margin:0;
 }
 }
