@@ -102,12 +102,30 @@ font-size:.8em;
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
+body {
+padding:0;
+}
+
+h1 {
+font-size:1.4em;
+}
+
+h2 {
+font-size:1.2em;
+}
+
+#nav {
+margin:0 0 0 1em;
+}
+
 #main {
-width:300px;
+width:auto;
+border:0;
 }
 
 #header {
-width:300px;
+width:auto;
 margin:0;
+font-size:1.4em;
 }
 }
