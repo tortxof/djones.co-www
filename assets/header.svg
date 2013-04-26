@@ -31,11 +31,11 @@
     </filter>
     <filter
        inkscape:collect="always"
-       id="filter3940">
+       id="filter3957">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="5.12"
-         id="feGaussianBlur3942" />
+         stdDeviation="3.84"
+         id="feGaussianBlur3959" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -64,7 +64,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,29 +73,29 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3940)"
+       style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3957)"
        id="rect3088"
-       width="128"
-       height="128"
-       x="308.04724"
-       y="462.18109" />
+       width="96"
+       height="96"
+       x="324.04724"
+       y="478.18109" />
     <image
-       y="462.18109"
-       x="308.04724"
+       y="478.18109"
+       x="324.04724"
        id="image3085"
        xlink:href="file:///home/tortxof/djones.co-www/assets/avatar-cc02.png"
-       height="128"
-       width="128" />
+       height="96"
+       width="96" />
     <text
        xml:space="preserve"
        style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3886);font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
-       x="465.19968"
+       x="447.19968"
        y="538.80511"
        id="text3866"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3868"
-         x="465.19968"
+         x="447.19968"
          y="538.80511">Daniel Jones</tspan></text>
   </g>
 </svg>
