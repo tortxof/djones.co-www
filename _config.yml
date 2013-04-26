@@ -5,3 +5,4 @@ server: false
 exclude:
 - README.md
 - upload
+- assets
