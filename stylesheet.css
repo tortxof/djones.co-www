@@ -17,6 +17,16 @@ font-size:1.3em;
 text-align:center;
 }
 
+#header {
+width:416px;
+height:153px;
+padding:0;
+border:0;
+margin:0 0 0 2em;
+background-image:url("/images/header.png");
+background-repeat:no-repeat;
+}
+
 #nav {
 font-size:.8em;
 padding:0;
@@ -68,14 +78,6 @@ border:1px solid #333;
 padding:1em;
 }
 
-#header {
-width:auto;
-border:0;
-padding:0;
-margin:0 0 0 2em;
-font-size:1.6em;
-}
-
 #content {
 clear:both;
 }
@@ -125,8 +127,9 @@ border:0;
 }
 
 #header {
-width:auto;
-margin:0;
-font-size:1.4em;
+background-image:url("/images/header-mobile.png");
+width:274px;
+height:76px;
+margin:0 0 0 1em;
 }
 }
