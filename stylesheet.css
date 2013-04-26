@@ -60,7 +60,8 @@ background-color:#ccc;
 #main {
 color:#000;
 box-shadow:0 0 10px #666;
-width:750px;
+width:auto;
+max-width:720px;
 margin:0 auto 0 auto;
 background-color:#fff;
 border:1px solid #333;
@@ -68,7 +69,7 @@ padding:1em;
 }
 
 #header {
-width:750px;
+width:auto;
 border:0;
 padding:0;
 margin:0 0 0 2em;
