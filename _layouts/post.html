@@ -3,3 +3,6 @@ layout: default
 ---
 <p class="post_date">{{ page.date | date: "%Y-%m-%d" }}</p>
 {{ content }}
+{% if page.edited %}
+<p class="post_date">Last edited: {{ page.edited | date: "%Y-%m-%d" }}</p>
+{% endif%}
