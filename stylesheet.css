@@ -17,6 +17,14 @@ font-size:1.3em;
 text-align:center;
 }
 
+code {
+background-color:#ccc;
+color:#333;
+padding:.5em;
+border:1px solid #999;
+display:block;
+}
+
 #header {
 width:379px;
 height:114px;
