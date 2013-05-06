@@ -1,0 +1,8 @@
+---
+---
+{% for page in site.pages %}
+http://djones.co{{ page.url }}
+{% endfor %}
+{% for post in site.posts %}
+http://djones.co{{ post.url }}
+{% endfor %}
