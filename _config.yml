@@ -1,3 +1,4 @@
+url: http://djones.co
 auto: false
 permalink: /blog/:year/:month/:day/:title
 pygments: true

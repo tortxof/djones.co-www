@@ -1,8 +1,6 @@
 ---
+layout: none
 ---
-{% for page in site.pages %}
-http://djones.co{{ page.url }}
-{% endfor %}
-{% for post in site.posts %}
-http://djones.co{{ post.url }}
+{% for page in site.pages %}{{ site.url }}{{ page.url | replace:'/index.html','' }}
+{% endfor %}{% for post in site.posts %}{{ site.url }}{{ post.url }}
 {% endfor %}
