@@ -18,6 +18,7 @@ text-align:center;
 }
 
 code {
+font-family:"Ubuntu Mono",monospace;
 background-color:#ccc;
 color:#333;
 padding:.5em;
