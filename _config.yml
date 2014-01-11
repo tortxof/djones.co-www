@@ -1,3 +1,5 @@
+name: djones.co
+description: Personal website and blog of Daniel Jones.
 url: http://djones.co
 auto: false
 permalink: /blog/:year/:month/:day/:title
