@@ -5,6 +5,7 @@ auto: false
 permalink: /blog/:year/:month/:day/:title
 pygments: true
 server: false
+markdown: redcarpet
 exclude:
 - README.md
 - upload
