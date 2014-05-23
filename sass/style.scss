@@ -13,6 +13,10 @@ $avatar-y: image-height('avatar.jpg');
 @include reset-box-model;
 }
 
+html, body {
+height: 100%;
+}
+
 /* Paragraph spacing */
 
 ul, ol {
@@ -24,7 +28,9 @@ padding: 0.5em 0;
 }
 
 code {
+display: block;
 padding: 0.3em;
+border: 1px solid #999;
 }
 
 /* Font and color */
@@ -148,4 +154,18 @@ text-decoration: none;
 
 #footer {
 @include span(full);
+}
+
+/* Breakpoints */
+
+@include breakpoint(512px) {
+
+body {
+@include background(linear-gradient(#999, #666 480px) no-repeat);
+}
+
+#main {
+@include container(80%);
+}
+
 }
