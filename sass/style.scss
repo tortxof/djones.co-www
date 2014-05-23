@@ -13,10 +13,6 @@ $avatar-y: image-height('avatar.jpg');
 @include reset-box-model;
 }
 
-html, body {
-height: 100%;
-}
-
 /* Paragraph spacing */
 
 ul, ol {
@@ -106,8 +102,8 @@ color:#333;
 
 #header {
 @include span(full);
-margin-top: gutter();
-margin-bottom: gutter();
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 #header img {
@@ -132,9 +128,7 @@ padding-left: ($avatar-x / 2) + 16px;
 #nav ul {
 padding: 0;
 list-style: none;
-}
-
-#nav li {
+text-align: center;
 }
 
 #nav a {
@@ -142,7 +136,6 @@ display: block;
 width: 50%;
 @include border-radius(3px);
 @include box-shadow(white 0 0 1px inset, rgba(black, 0.5) 0 0 3px);
-text-align: center;
 border: 1px solid #333;
 margin: 3px auto;
 text-decoration: none;
@@ -161,11 +154,54 @@ text-decoration: none;
 @include breakpoint(512px) {
 
 body {
-@include background(linear-gradient(#999, #666 480px) no-repeat);
+@include background(linear-gradient(#ccc, #666 480px) no-repeat);
+}
+
+#nav li {
+display: inline-block;
+}
+
+#nav a {
+width: auto;
+padding: 2px 1em;
+margin: 0 4px;
+}
+
+#header img {
+width: $avatar-x;
+height: $avatar-y;
+}
+
+#header p {
+line-height: $avatar-y;
+font-size: 34px;
+padding-left: $avatar-x + 16px;
 }
 
 #main {
 @include container(80%);
+border: 1px solid #333;
+border-top: 0;
+}
+
+}
+
+@include breakpoint(768px) {
+
+#header p {
+padding-left: $avatar-x + 32px;
+}
+
+}
+
+@include breakpoint(1200px) {
+
+#header p {
+font-size: 42px;
+}
+
+#main {
+@include container(960px);
 }
 
 }
