@@ -86,8 +86,11 @@ font-size:1.3em;
 text-align:center;
 }
 
-code {
+code, pre {
 font-family:"Ubuntu Mono",monospace;
+}
+
+code {
 background-color:#ccc;
 color:#333;
 }
