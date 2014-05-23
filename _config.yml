@@ -7,3 +7,4 @@ exclude:
 - upload
 - assets
 - sass
+- config.rb
