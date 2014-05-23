@@ -146,6 +146,8 @@ text-decoration: none;
 
 #content {
 @include span(full);
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 #footer {
