@@ -14,22 +14,22 @@
 </head>
 <body>
 
-<div id="main">
+<div class="main">
 
-<div id="header">{% include header.html %}</div>
+<header>{% include header.html %}</header>
 
-<nav id="nav" role="navigation">
+<nav role="navigation">
 {% include nav.html %}
-</nav><!-- end nav -->
+</nav>
 
-<div id="content">
+<div class="content">
 <h1>{{ page.title }}</h1>
 {{ content }}
 </div><!-- end content -->
 
-<div id="footer">
+<footer>
 {% include footer.html %}
-</div><!-- end footer -->
+</footer>
 
 </div><!-- end main -->
 

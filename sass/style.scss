@@ -36,28 +36,28 @@ font-family:"Open Sans",sans-serif;
 background-color:#333;
 }
 
-#nav {
+nav {
 font-size:.8em;
 }
 
-#nav a:link, #nav a:visited
+nav a:link, nav a:visited
 {
 color:#fff;
 background-color:#666;
 }
 
-#nav a:hover, #nav a:active
+nav a:hover, nav a:active
 {
 color:#000;
 background-color:#ccc;
 }
 
-#main {
+.main {
 color:#000;
 background-color:#fff;
 }
 
-#footer {
+footer {
 font-size:.8em;
 color:#666;
 background-color:#ccc;
@@ -99,17 +99,17 @@ color:#333;
 
 @include layout(4 1 inside);
 
-#main {
+.main {
 @include container(100%);
 }
 
-#header {
+header {
 @include span(full);
 margin-top: 1em;
 margin-bottom: 1em;
 }
 
-#header img {
+header img {
 display: block;
 float: left;
 @include box-shadow(black 0 0 5px);
@@ -117,24 +117,24 @@ width: $avatar-x / 2;
 height: $avatar-y / 2;
 }
 
-#header p {
+header p {
 padding: 0;
 font-size: 32px;
 line-height: $avatar-y / 2;
 padding-left: ($avatar-x / 2) + 16px;
 }
 
-#nav {
+nav {
 @include span(full);
 }
 
-#nav ul {
+nav ul {
 padding: 0;
 list-style: none;
 text-align: center;
 }
 
-#nav a {
+nav a {
 display: block;
 width: 50%;
 @include border-radius(3px);
@@ -144,13 +144,13 @@ margin: 3px auto;
 text-decoration: none;
 }
 
-#content {
+.content {
 @include span(full);
 margin-top: 1em;
 margin-bottom: 1em;
 }
 
-#footer {
+footer {
 @include span(full);
 }
 
@@ -162,28 +162,28 @@ body {
 @include background(linear-gradient(#ccc, #333) fixed);
 }
 
-#nav li {
+nav li {
 display: inline-block;
 }
 
-#nav a {
+nav a {
 width: auto;
 padding: 2px 1em;
 margin: 0 4px;
 }
 
-#header img {
+header img {
 width: $avatar-x;
 height: $avatar-y;
 }
 
-#header p {
+header p {
 line-height: $avatar-y;
 font-size: 34px;
 padding-left: $avatar-x + 16px;
 }
 
-#main {
+.main {
 @include container(80%);
 border: 1px solid #333;
 border-top: 0;
@@ -194,7 +194,7 @@ margin-bottom: 1em;
 
 @include breakpoint(768px) {
 
-#header p {
+header p {
 padding-left: $avatar-x + 32px;
 }
 
@@ -202,11 +202,11 @@ padding-left: $avatar-x + 32px;
 
 @include breakpoint(1200px) {
 
-#header p {
+header p {
 font-size: 42px;
 }
 
-#main {
+.main {
 @include container(960px);
 }
 
