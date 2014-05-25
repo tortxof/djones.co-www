@@ -177,7 +177,12 @@ margin: 0;
 border-width: 1px 0 1px 1px;
 }
 
+nav a:first-child {
+@include border-left-radius(7px);
+}
+
 nav a:last-child {
+@include border-right-radius(7px);
 border-width: 1px;
 }
 
