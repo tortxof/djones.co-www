@@ -40,16 +40,20 @@ nav {
 font-size:.8em;
 }
 
+nav a {
+color:#000;
+border-style: solid;
+border-color: #666;
+}
+
 nav a:link, nav a:visited
 {
-color:#fff;
-background-color:#666;
+background-color:#ccc;
 }
 
 nav a:hover, nav a:active
 {
-color:#000;
-background-color:#ccc;
+background-color:#999;
 }
 
 .main {
@@ -132,8 +136,6 @@ nav a {
 display: block;
 width: 50%;
 @include box-shadow(white 0 0 2px inset);
-border-style: solid;
-border-color: #333;
 border-width: 1px 1px 0 1px;
 padding: 0.2em;
 margin: 0 auto;
