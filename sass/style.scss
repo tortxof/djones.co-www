@@ -48,12 +48,12 @@ border-color: #666;
 
 nav a:link, nav a:visited
 {
-background-color:#ccc;
+@include background-image(linear-gradient(#eee, #999));
 }
 
 nav a:hover, nav a:active
 {
-background-color:#999;
+@include background-image(linear-gradient(#999, #ccc));
 }
 
 .main {
