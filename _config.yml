@@ -5,6 +5,7 @@ permalink: /blog/:year/:month/:day/:title
 exclude:
 - README.md
 - upload
+- build
 - assets
 - sass
 - config.rb
