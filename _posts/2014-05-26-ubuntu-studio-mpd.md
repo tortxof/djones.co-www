@@ -18,11 +18,11 @@ Next step is to disable the MPD system service.
 
 `sudo update-rc.d mpd disable`
 
-Now it's time to create a config directory for MPD. I put mine at '~/mpd', but '~/.mpd' is fine if you want it hidden.
+Now it's time to create a config directory for MPD. I put mine at `~/mpd`, but `~/.mpd` is fine if you want it hidden.
 
 `mkdir ~/mpd`
 
-I keep my music at '~/music', and created a symlink to it from our new MPD directory.
+I keep my music at `~/music`, and created a symlink to it from our new MPD directory.
 
     cd ~/mpd
     ln -s ../music
@@ -37,7 +37,7 @@ Now we will copy the default system config for mpd and modify it.
 
 `cp /etc/mpd.conf ~/.mpdconf`
 
-Now, edit '~/.mpdconf' with your text editor.
+Now, edit `~/.mpdconf` with your text editor.
 
 In the "Files and Directories" section, edit these lines:
 
@@ -77,10 +77,10 @@ Don't forget to comment out that closing brace!
 You don't need the "server" and "sink" lines.
 
 Now you should be ready to start up MPD.
-You can just run 'mpd' from the terminal, and it should start up.
+You can just run `mpd` from the terminal, and it should start up.
 It may complain about a corrupted database, just because it's an empty file.
 It shouldn't complain on subsequent start-ups.
-Then fire up 'ncmpc', and it should be in the process of building a database.
+Then fire up `ncmpc`, and it should be in the process of building a database.
 
 The last thing to do is tell our desktop environment to start MPD when we log in.
 If you're using the default XFCE for Ubuntu Studio, go to the Applications Menu,
