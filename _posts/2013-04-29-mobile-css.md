@@ -17,7 +17,7 @@ This should be at the end of your CSS file.
 
 You should also add the following meta tag in the head of your html.
 
-`<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 This basically prevents mobile browsers from having virtual viewports larger than the physical screen.
 

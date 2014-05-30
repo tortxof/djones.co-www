@@ -8,19 +8,19 @@ PulseAudio runs with user permissions, so MPD needs to run this way too so they 
 
 First, go ahead and install MPD if it is not already.
 
-`sudo apt-get install mpd`
+    sudo apt-get install mpd
 
 And also a client. I like ncmpc (runs in terminal).
 
-`sudo apt-get install ncmpc`
+    sudo apt-get install ncmpc
 
 Next step is to disable the MPD system service.
 
-`sudo update-rc.d mpd disable`
+    sudo update-rc.d mpd disable
 
 Now it's time to create a config directory for MPD. I put mine at `~/mpd`, but `~/.mpd` is fine if you want it hidden.
 
-`mkdir ~/mpd`
+    mkdir ~/mpd
 
 I keep my music at `~/music`, and created a symlink to it from our new MPD directory.
 
@@ -35,7 +35,7 @@ Next, we need to create some empty files and a playlist directory for MPD.
 
 Now we will copy the default system config for mpd and modify it.
 
-`cp /etc/mpd.conf ~/.mpdconf`
+    cp /etc/mpd.conf ~/.mpdconf
 
 Now, edit `~/.mpdconf` with your text editor.
 
@@ -51,7 +51,7 @@ In the "Files and Directories" section, edit these lines:
 
 And in the next section, "General music daemon options", change the "user" line to your own username.
 
-`user "tortxof"`
+    user "tortxof"
 
 Lastly, in the "Audio Output" section, disable alsa and enable pulse.
 
