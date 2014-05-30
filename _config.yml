@@ -1,6 +1,7 @@
 name: djones.co
 description: Personal website and blog of Daniel Jones.
 url: http://djones.co
+email: tortxof@gmail.com
 permalink: /blog/:year/:month/:day/:title
 exclude:
 - README.md
