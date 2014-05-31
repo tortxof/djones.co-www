@@ -56,22 +56,22 @@ And in the next section, "General music daemon options", change the "user" line 
 Lastly, in the "Audio Output" section, disable alsa and enable pulse.
 
     #audio_output {
-    #	type		"alsa"
-    #	name		"My ALSA Device"
-    #	device		"hw:0,0"	# optional
-    #	mixer_type      "hardware"      # optional
-    #	mixer_device	"default"	# optional
-    #	mixer_control	"PCM"		# optional
-    #	mixer_index	"0"		# optional
+    #type          "alsa"
+    #name          "My ALSA Device"
+    #device        "hw:0,0"   # optional
+    #mixer_type    "hardware" # optional
+    #mixer_device  "default"  # optional
+    #mixer_control "PCM"      # optional
+    #mixer_index   "0"        # optional
     #}
 
 Don't forget to comment out that closing brace!
 
     audio_output {
-    type		"pulse"
-    name		"My Pulse Output"
-    #	server		"remote_server"		# optional
-    #	sink		"remote_server_sink"	# optional
+    type    "pulse"
+    name    "My Pulse Output"
+    #server "remote_server"      # optional
+    #sink   "remote_server_sink" # optional
     }
 
 You don't need the "server" and "sink" lines.
