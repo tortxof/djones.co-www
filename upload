@@ -1,1 +1,1 @@
-rsync -av _site/ djones.co:/var/www/
+rsync -av _site/ europa.djones.co:/var/www/servers/djones.co
