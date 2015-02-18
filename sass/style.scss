@@ -15,23 +15,35 @@ $avatar-y: image-height('avatar.jpg');
 
 /* Paragraph spacing */
 
-ul, ol {
-padding-left: 2em;
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+margin: 1em 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-padding: 0.5em 0;
+ul, ol {
+  padding-left: 2em;
 }
+
+/* Code blocks */
 
 code {
 display: inline-block;
-padding-left: 0.3em;
-padding-right: 0.3em;
+padding: 0 0.3em;
 border: 1px solid #999;
+background-color:#ccc;
+color:#333;
+}
+
+pre {
+  display: block;
+  overflow: auto;
+  border: 1px solid #999;
+  background-color:#ccc;
 }
 
 pre > code {
+  display: block;
 padding: 0.3em;
+border: none;
 }
 
 /* Font and color */
@@ -99,11 +111,6 @@ code, pre {
 font-family:"Ubuntu Mono",monospace;
 }
 
-code {
-background-color:#ccc;
-color:#333;
-}
-
 /* Structure */
 
 @include layout(4 1 inside);
@@ -127,7 +134,7 @@ height: $avatar-y / 2;
 }
 
 header p {
-padding: 0;
+margin: 0;
 font-size: 32px;
 line-height: $avatar-y / 2;
 padding-left: ($avatar-x / 2) + 16px;
