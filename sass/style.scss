@@ -76,16 +76,22 @@ nav a:hover, nav a:active
 .main {
   color:#000;
   background-color:#fff;
+  @include box-shadow(0 0 32px rgba(black, 0.5));
 }
 
 footer {
   font-size:.8em;
   color:#666;
   background-color:#ccc;
+  @include box-shadow(0 8px 8px -8px black inset);
 }
 
 footer a {
   color: #666;
+}
+
+a {
+  color: royalblue;
 }
 
 .post_date
