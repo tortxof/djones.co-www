@@ -84,6 +84,10 @@ footer {
   background-color:#ccc;
 }
 
+footer a {
+  color: #666;
+}
+
 .post_date
 {
   color:#666;
@@ -167,6 +171,8 @@ nav a:last-child {
 
 footer {
   @include span(full);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* Breakpoints */
