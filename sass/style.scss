@@ -58,23 +58,26 @@ nav {
 }
 
 nav a {
-  color:#000;
-  border-style: solid;
-  border-color: #666;
+  position: relative;
+  color:#fff;
+  background-color: slategrey;
+  @include border-radius(5px);
+  @include transition-property(all);
+  @include transition-duration(0.3s);
 }
 
-nav a:link, nav a:visited
-{
-  @include background-image(linear-gradient(#eee, #999));
+nav a:link, nav a:visited {
+  top: 0;
+  @include box-shadow(0 2px 4px rgba(black, .3));
 }
 
-nav a:hover, nav a:active
-{
-  @include background-image(linear-gradient(#999, #ccc));
+nav a:hover, nav a:active {
+  top: -4px;
+  @include box-shadow(0 6px 8px rgba(black, .3));
 }
 
 .main {
-  color:#000;
+  color:#444;
   background-color:#fff;
   @include box-shadow(0 0 32px rgba(black, 0.5));
 }
@@ -127,12 +130,13 @@ code, pre {
 
 .main {
   @include container(100%);
+  overflow: hidden;
 }
 
 header {
   @include span(full);
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 header img {
@@ -157,16 +161,10 @@ nav {
 nav a {
   display: block;
   width: 50%;
-  @include box-shadow(white 0 0 2px inset);
-  border-width: 1px 1px 0 1px;
   padding: 0.2em;
-  margin: 0 auto;
+  margin: .5em auto;
   text-decoration: none;
   text-align: center;
-}
-
-nav a:last-child {
-  border-width: 1px;
 }
 
 .content {
@@ -197,17 +195,7 @@ footer {
     display: inline-block;
     width: auto;
     padding: 0.5em 1em;
-    margin: 0;
-    border-width: 1px 0 1px 1px;
-  }
-
-  nav a:first-child {
-    @include border-left-radius(7px);
-  }
-
-  nav a:last-child {
-    @include border-right-radius(7px);
-    border-width: 1px;
+    margin: 0 1em;
   }
 
   header img {
@@ -223,8 +211,6 @@ footer {
 
   .main {
     @include container(80%);
-    border: 1px solid #333;
-    border-top: 0;
     margin-bottom: 1em;
   }
 
