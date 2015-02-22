@@ -142,9 +142,10 @@ header {
 header img {
   display: block;
   float: left;
-  @include box-shadow(black 0 0 5px);
+  @include box-shadow(0 2px 8px rgba(black, .8));
   width: $avatar-x / 2;
   height: $avatar-y / 2;
+  @include border-radius($avatar-x / 4);
 }
 
 header p {
@@ -201,6 +202,7 @@ footer {
   header img {
     width: $avatar-x;
     height: $avatar-y;
+    @include border-radius($avatar-x / 2);
   }
 
   header p {
