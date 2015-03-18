@@ -5,6 +5,11 @@
 $avatar-x: image-width('avatar.jpg');
 $avatar-y: image-height('avatar.jpg');
 
+$c-code-bg: #ddd;
+$c-code-border: #ccc;
+$c-footer-bg: #ddd;
+$c-text: #444;
+
 /* Reset */
 
 @import 'compass/reset/utilities';
@@ -28,16 +33,16 @@ ul, ol {
 code {
   display: inline-block;
   padding: 0 0.3em;
-  border: 1px solid #999;
-  background-color:#ccc;
-  color:#333;
+  border: 1px solid $c-code-border;
+  background-color: $c-code-bg;
+  color: $c-text;
 }
 
 pre {
   display: block;
   overflow: auto;
-  border: 1px solid #999;
-  background-color:#ccc;
+  border: 1px solid $c-code-border;
+  background-color: $c-code-bg;
 }
 
 pre > code {
@@ -50,7 +55,9 @@ pre > code {
 
 body {
   font-family:"Open Sans",sans-serif;
-  background-color:#333;
+  background-color: lightslategrey;
+  font-size: 18px;
+  color: $c-text;
 }
 
 nav {
@@ -58,26 +65,13 @@ nav {
 }
 
 nav a {
-  position: relative;
   color:#fff;
   background-color: slategrey;
   @include border-radius(5px);
-  @include transition-property(all);
-  @include transition-duration(0.3s);
-}
-
-nav a:link, nav a:visited {
-  top: 0;
   @include box-shadow(0 2px 4px rgba(black, .3));
 }
 
-nav a:hover, nav a:active {
-  top: -4px;
-  @include box-shadow(0 6px 8px rgba(black, .3));
-}
-
 .main {
-  color:#444;
   background-color:#fff;
   @include box-shadow(0 0 32px rgba(black, 0.5));
 }
@@ -85,7 +79,7 @@ nav a:hover, nav a:active {
 footer {
   font-size:.8em;
   color:#666;
-  background-color:#ccc;
+  background-color: $c-footer-bg;
   @include box-shadow(0 8px 8px -8px black inset);
 }
 
@@ -145,7 +139,7 @@ header img {
   @include box-shadow(0 2px 8px rgba(black, .8));
   width: $avatar-x / 2;
   height: $avatar-y / 2;
-  @include border-radius($avatar-x / 4);
+  @include border-radius(50%);
 }
 
 header p {
@@ -182,11 +176,7 @@ footer {
 
 /* Breakpoints */
 
-@include breakpoint(512px) {
-
-  body {
-    @include background(linear-gradient(#ccc, #333) fixed);
-  }
+@include breakpoint(640px) {
 
   nav {
     text-align: center;
@@ -202,7 +192,6 @@ footer {
   header img {
     width: $avatar-x;
     height: $avatar-y;
-    @include border-radius($avatar-x / 2);
   }
 
   header p {
