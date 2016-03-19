@@ -1,0 +1,14 @@
+image: tortxof/webdev
+
+jekyll:
+  stage: build
+  script:
+    - compass compile -s compressed
+    - jekyll build
+  tags:
+    - webdev
+  only:
+    - master
+  artifacts:
+    paths:
+      - _site/
