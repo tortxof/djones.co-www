@@ -1,1 +1,1 @@
-rsync -av _site/ europa.djones.co:/var/www/servers/djones.co
+rsync -av --delete _site/ titan.djones.co:/home/tortxof/servers/djones.co/
