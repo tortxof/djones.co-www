@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="author" content="Daniel Jones" />
-<meta name="google-site-verification" content="5OWi-zCzK1Ecq1LeO7XgXL_ZCETo2g-f1My_qCzkScA" />
-<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
-<link href="//fonts.googleapis.com/css?family=Ubuntu+Mono|Open+Sans" rel="stylesheet" type="text/css">
-<link href="/css/style.css" rel="stylesheet" type="text/css" />
-<link rel="icon" type="image/png" href="/images/icon.png" />
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--[if lt IE 9]>
-<script src="/js/html5shiv.min.js"></script>
-<script src="/js/respond.min.js"></script>
-<![endif]-->
-<title>Daniel Jones - {{ page.title }}</title>
-{% include google-analytics.html %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Daniel Jones" />
+  <meta name="google-site-verification" content="5OWi-zCzK1Ecq1LeO7XgXL_ZCETo2g-f1My_qCzkScA" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml" />
+  <link href="//fonts.googleapis.com/css?family=Ubuntu+Mono|Open+Sans" rel="stylesheet" type="text/css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+  <title>{{ page.title }} - Daniel Jones</title>
 </head>
 <body>
 
-<div class="main">
+  <header>{% include header.html %}</header>
 
-<header>{% include header.html %}</header>
+  <nav>{% include nav.html %}</nav>
 
-<nav role="navigation">
-{% include nav.html %}
-</nav>
+  <h1>{{ page.title }}</h1>
 
-<div class="content">
-<h1>{{ page.title }}</h1>
-{{ content }}
-</div><!-- end content -->
+  {{ content }}
 
-<footer>
-{% include footer.html %}
-</footer>
+  <footer>{% include footer.html %}</footer>
 
-</div><!-- end main -->
+  {% include google-analytics.html %}
 
 </body>
 </html>

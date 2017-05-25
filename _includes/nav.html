@@ -1,5 +1,5 @@
-<!--
-{% for link in site.data.nav %}
---><a href="{{ link.url }}">{{ link.name }}</a><!--
-{% endfor %}
--->
+<ul>
+  {% for link in site.data.nav %}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+  {% endfor %}
+</ul>
