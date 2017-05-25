@@ -13,15 +13,17 @@
 </head>
 <body>
 
-  <header>{% include header.html %}</header>
+  <div class="container">
+    <header>{% include header.html %}</header>
 
-  <nav>{% include nav.html %}</nav>
+    <nav>{% include nav.html %}</nav>
 
-  <h1>{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
 
-  {{ content }}
+    {{ content }}
 
-  <footer>{% include footer.html %}</footer>
+    <footer>{% include footer.html %}</footer>
+  </div>
 
   {% include google-analytics.html %}
 
