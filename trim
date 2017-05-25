@@ -1,5 +1,0 @@
-find _site -type f -iname '*.html' | while read line
-do sed -i 's/^[[:blank:]]*//g' "$line"
-sed -i 's/[[:blank:]]*$//g' "$line"
-sed -i '/^$/d' "$line"
-done
