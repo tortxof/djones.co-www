@@ -1,0 +1,8 @@
+default:
+  root: "./_site"
+
+dev:
+  bucket: "next.djones.co"
+
+production:
+  bucket: "www.djones.co"
