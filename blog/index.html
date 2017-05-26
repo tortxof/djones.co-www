@@ -3,9 +3,11 @@ layout: default
 title: Blog Archive
 ---
 {% for post in site.posts %}
-<p>
-<span class="post_date">{{ post.date | date: "%Y-%m-%d" }}</span>
- - <a href="{{ post.url }}">{{ post.title }}</a> - 
-<span class="post_preview">{{ post.content | strip_html | truncatewords: 10 }}</span>
-</p>
+<div class="post-listing">
+  <div class="header">
+    <div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <div class="post-link"><a href="{{ post.url }}">{{ post.title }}</a></div>
+  </div>
+  <div class="post-preview">{{ post.content | strip_html | truncatewords: 20 }}</div>
+</div>
 {% endfor %}
