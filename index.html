@@ -5,7 +5,7 @@ title: Where to find me
 <ul class="wtfm">
   {% for link in site.data.wtfm %}
     <li>
-      <span><a href="{{ link.url }}"><i class="fa fa-{{ link.icon }} fa-2x" aria-hidden="true"></i></a></span>
+      <span class="icon"><a href="{{ link.url }}"><i class="fa fa-{{ link.icon }} fa-2x" aria-hidden="true"></i></a></span>
       <span><a href="{{ link.url }}">{{ link.text }}</a></span>
     </li>
   {% endfor %}
