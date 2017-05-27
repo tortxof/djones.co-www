@@ -6,3 +6,4 @@ permalink: /blog/:year/:month/:day/:title/
 exclude:
 - README.md
 - assets
+- deploy.yaml
