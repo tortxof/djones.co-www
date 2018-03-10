@@ -1,4 +1,8 @@
 -
+  icon: user-circle
+  text: Portfolio
+  url: "https://portfolio.djones.co/"
+-
   icon: vimeo
   text: Vimeo
   url: "http://www.vimeo.com/tortxof"
