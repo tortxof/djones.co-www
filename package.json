@@ -1,0 +1,31 @@
+{
+  "name": "djones.co-www",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@gitea.djones.co:2222/tortxof/djones.co-www.git",
+  "author": "Daniel Jones <tortxof@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "jekyll-serve": "jekyll serve --livereload",
+    "webpack-watch": "webpack --watch --run-dev",
+    "prestart": "webpack --run-dev",
+    "start": "npm-run-all --parallel webpack-watch jekyll-serve",
+    "prebuild": "jekyll build; NODE_ENV=production webpack --run-prod",
+    "build": "JEKYLL_ENV=production jekyll build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.0.5",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-command": "^0.4.1"
+  }
+}

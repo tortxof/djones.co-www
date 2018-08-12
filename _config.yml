@@ -3,7 +3,5 @@ description: Personal website and blog of Daniel Jones.
 url: https://djones.co
 email: tortxof@gmail.com
 permalink: /blog/:year/:month/:day/:title/
-exclude:
-- README.md
-- assets
-- deploy.yaml
+source: src
+destination: dist

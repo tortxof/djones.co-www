@@ -1,0 +1,3 @@
+[base]
+    build = "npm run build"
+    publish = "dist"
