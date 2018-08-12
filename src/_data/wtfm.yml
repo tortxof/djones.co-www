@@ -3,17 +3,21 @@
   text: Portfolio
   url: "https://portfolio.djones.co/"
 -
-  icon: vimeo
-  text: Vimeo
-  url: "http://www.vimeo.com/tortxof"
+  icon: github
+  text: GitHub
+  url: "https://github.com/tortxof"
+-
+  icon: instagram
+  text: Instagram
+  url: "http://instagram.com/wtxfd"
 -
   icon: youtube-play
   text: YouTube
   url: "http://www.youtube.com/user/tortxof"
 -
-  icon: instagram
-  text: Instagram
-  url: "http://instagram.com/wtxfd"
+  icon: vimeo
+  text: Vimeo
+  url: "http://www.vimeo.com/tortxof"
 -
   icon: twitter
   text: Twitter
@@ -22,10 +26,6 @@
   icon: flickr
   text: flickr
   url: "http://www.flickr.com/photos/tortxof"
--
-  icon: github
-  text: GitHub
-  url: "https://github.com/tortxof"
 -
   icon: envelope-o
   text: tortxof@gmail.com
